@@ -1,0 +1,877 @@
+/* ==============================================================
+   MARVELS ACADEMY — OFFLINE RESPONSIVE STYLESHEET
+   Loaded after styles.css. No external dependencies.
+   ============================================================== */
+
+/* Medium desktops and small laptops */
+@media (max-width: 1180px) {
+  .site-header {
+    padding-inline: 5%;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: #13254b;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .site-header .nav {
+    display: none;
+  }
+
+  .site-header .nav.open {
+    position: absolute;
+    top: 96px;
+    left: 5%;
+    right: 5%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 16px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(16, 32, 59, .18);
+  }
+
+  .site-header.is-scrolled .nav.open {
+    top: 76px;
+  }
+
+  .site-header .nav.open a {
+    width: 100%;
+    padding: 11px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(16, 32, 59, .08);
+  }
+
+  .site-header .nav.open a:last-child {
+    border-bottom: 0;
+  }
+
+  .site-header > .header-enroll,
+  .site-header > .pill-btn {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 850px) {
+  html {
+    scroll-padding-top: 86px;
+  }
+
+  .container {
+    width: min(92%, 720px);
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .hero,
+  .mission-hero,
+  .values-hero,
+  .talent-hero,
+  .staff-hero,
+  .page-hero {
+    padding-top: 72px;
+  }
+
+  .hero-grid,
+  .two-col,
+  .program-grid,
+  .mission-grid,
+  .statement-grid,
+  .org-level,
+  .footer-grid,
+  .three,
+  .cards.three,
+  .staff-cards,
+  .staff-profile-grid,
+  .staff-profile-grid-six,
+  .values-grid,
+  .pillars-row,
+  .clubs-grid,
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-grid,
+  .two-col {
+    gap: 42px;
+  }
+
+  .hero-copy,
+  .staff-intro,
+  .page-hero {
+    text-align: center;
+  }
+
+  .hero-copy p,
+  .staff-intro p,
+  .page-hero p {
+    margin-inline: auto;
+  }
+
+  .checks,
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .hero-card,
+  .talent-showcase {
+    margin-top: 18px;
+  }
+
+  .float-card.top {
+    right: 0;
+  }
+
+  .float-card.bottom {
+    left: 0;
+  }
+
+  .image-note span {
+    right: 10px;
+  }
+
+  .org-level::before,
+  .org-branch::before {
+    display: none;
+  }
+
+  .sub-panel {
+    width: 100%;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .schedule-row.head {
+    display: none;
+  }
+
+  .event-card {
+    grid-template-columns: 78px 1fr;
+  }
+
+  .event-tag {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .footer-cta,
+  .copyright {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-cta .pill-btn {
+    margin-left: 0;
+  }
+}
+
+/* Phones */
+@media (max-width: 620px) {
+  .site-header {
+    min-height: 82px;
+    height: 82px;
+    padding-inline: 4%;
+    gap: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-copy strong {
+    font-size: 21px;
+  }
+
+  .brand-copy small {
+    margin-top: 6px;
+    font-size: 12px;
+    letter-spacing: .07em;
+  }
+
+  .site-header.is-scrolled {
+    min-height: 72px;
+    height: 72px;
+  }
+
+  .site-header.is-scrolled .brand img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .site-header.is-scrolled .brand-copy strong {
+    font-size: 19px;
+  }
+
+  .site-header.is-scrolled .brand-copy small {
+    font-size: 11px;
+  }
+
+  .site-header .nav.open {
+    top: 82px;
+    left: 4%;
+    right: 4%;
+  }
+
+  .site-header.is-scrolled .nav.open {
+    top: 72px;
+  }
+
+  h1 {
+    font-size: clamp(38px, 12vw, 52px);
+  }
+
+  h2 {
+    font-size: clamp(30px, 9vw, 42px);
+  }
+
+  .hero-copy p,
+  .staff-intro p,
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions a,
+  .hero-actions button,
+  .primary-btn,
+  .outline-btn,
+  .pill-btn {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-card {
+    padding: 32px;
+  }
+
+  .talent-showcase img {
+    height: 310px;
+  }
+
+  .program img,
+  .gallery-item img {
+    height: 220px;
+    min-height: 220px;
+  }
+
+  .card,
+  .dark-cards article,
+  .mission-panel,
+  .statement-card,
+  .value-card,
+  .club-card,
+  .staff-role-card,
+  .profile-card,
+  .form,
+  .download-card {
+    padding: 24px;
+  }
+
+  .mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-note span {
+    position: static;
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .download-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .download-card a {
+    width: 100%;
+    margin-left: 72px;
+  }
+
+  .event-card {
+    grid-template-columns: 68px 1fr;
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-cta,
+  .copyright {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 390px) {
+  .brand img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-copy strong {
+    font-size: 18px;
+  }
+
+  .brand-copy small {
+    font-size: 10.5px;
+  }
+
+  .menu-toggle {
+    font-size: 25px;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .float-card {
+    position: static;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Responsive image heroes */
+@media(max-width:850px){.image-hero,.page-hero.image-hero{min-height:480px;padding:70px 0}.image-hero h1,.page-hero.image-hero h1{font-size:clamp(38px,10vw,58px)}.hero-overlay{background:linear-gradient(90deg,rgba(7,20,48,.94),rgba(10,27,58,.72))}.image-hero-content .hero-copy,.page-hero .image-hero-content{max-width:100%}.image-hero p{font-size:16px}.home-image-hero,.mission-image-hero,.staff-image-hero,.gallery-image-hero,.news-image-hero{background-position:center}}
+@media(max-width:520px){.image-hero,.page-hero.image-hero{min-height:440px;padding:58px 0}.image-hero h1,.page-hero.image-hero h1{font-size:38px}.hero-breadcrumb{font-size:12px}.image-hero .hero-actions{align-items:stretch}.image-hero .primary-btn,.image-hero .outline-btn{justify-content:center;text-align:center}}
+
+/* ==============================================================
+   BOOTSTRAP-AWARE DEVICE REFINEMENTS
+   These rules load after the local Bootstrap framework.
+   ============================================================== */
+
+/* Small laptops and landscape tablets */
+@media (min-width: 851px) and (max-width: 1180px) {
+  .image-hero { min-height: 620px; }
+  .image-hero-content { min-height: 620px; display: flex; align-items: center; }
+  .program-grid, .news-grid, .gallery-grid { gap: 28px; }
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 30px; }
+}
+
+/* Portrait tablets: retain two-column cards where space permits */
+@media (min-width: 621px) and (max-width: 850px) {
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid,
+  .staff-profile-grid,
+  .staff-profile-grid-six,
+  .clubs-grid,
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .image-hero { min-height: 560px; }
+  .image-hero-content { min-height: 560px; display: flex; align-items: center; }
+  .image-hero .hero-copy { max-width: 680px; }
+}
+
+/* Phones: single-column, touch-friendly controls */
+@media (max-width: 620px) {
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid,
+  .staff-profile-grid,
+  .staff-profile-grid-six,
+  .clubs-grid,
+  .values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .image-hero { min-height: calc(100svh - 82px); background-position: center center; }
+  .image-hero-content { min-height: calc(100svh - 82px); display: flex; align-items: center; }
+  .hero-actions a, .form button { min-height: 48px; }
+  input, select, textarea { font-size: 16px; }
+  .gallery-item img, .news-card img, .program img { width: 100%; }
+}
+
+
+/* ==============================================================
+   FINAL BOOTSTRAP COMPATIBILITY + LAPTOP / PHONE FIXES
+   Keeps Bootstrap offline while protecting the custom site layout.
+   ============================================================== */
+
+/* Neutralise Bootstrap rules that collide with custom component names. */
+.site-header .nav {
+  flex-wrap: nowrap;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.card,
+.program,
+.news-card,
+.quote-card,
+.stat-card,
+.value-card,
+.club-card,
+.profile-card,
+.staff-role-card,
+.download-card {
+  display: block;
+  color: inherit;
+  min-width: 0;
+}
+.card { flex: initial; }
+.badge { white-space: normal; }
+.container { max-width: 1100px; padding-left: 0; padding-right: 0; }
+img { max-width: 100%; }
+button, input, select, textarea { font-family: inherit; }
+
+/* Standard laptop / desktop layout (1366px and larger). */
+@media (min-width: 1321px) {
+  .site-header {
+    padding-inline: clamp(28px, 4vw, 64px);
+    gap: 18px;
+  }
+  .brand { min-width: 270px; gap: 13px; }
+  .brand img { width: 66px; height: 66px; }
+  .brand-copy strong { font-size: 26px; }
+  .brand-copy small { font-size: 14px; margin-top: 7px; }
+  .site-header .nav { gap: 13px; }
+  .site-header .nav a { font-size: 11px; }
+  .header-enroll { padding: 10px 15px; font-size: 12px; }
+  .image-hero { min-height: 570px; padding: 72px 0; }
+  .image-hero h1 { font-size: clamp(50px, 4.8vw, 68px); max-width: 760px; }
+}
+
+/* Common laptop widths, including 1280px and 1366px displays. */
+@media (min-width: 1121px) and (max-width: 1320px) {
+  .site-header {
+    height: 88px;
+    min-height: 88px;
+    padding-inline: 2.5%;
+    gap: 11px;
+  }
+  .brand { min-width: 225px; gap: 10px; }
+  .brand img { width: 58px; height: 58px; }
+  .brand-copy strong { font-size: 22px; }
+  .brand-copy small { margin-top: 6px; font-size: 12px; }
+  .site-header .nav { gap: 9px; }
+  .site-header .nav a { font-size: 10px; }
+  .header-enroll { padding: 9px 13px; font-size: 11px; }
+  .site-header.is-scrolled { height: 72px; min-height: 72px; }
+  .image-hero { min-height: 540px; padding: 65px 0; }
+  .image-hero h1 { font-size: clamp(48px, 5vw, 64px); max-width: 720px; }
+  .image-hero p { font-size: 17px; }
+  .container { width: min(1080px, 90%); }
+}
+
+/* Switch to the mobile/tablet menu before the header becomes cramped. */
+@media (max-width: 1120px) {
+  .site-header { padding-inline: 5%; }
+  .brand { min-width: 0; }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: #13254b;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .site-header .nav { display: none; }
+  .site-header .nav.open {
+    position: absolute;
+    top: 96px;
+    left: 5%;
+    right: 5%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    max-height: calc(100vh - 116px);
+    overflow-y: auto;
+    padding: 14px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(16,32,59,.18);
+  }
+  .site-header .nav.open a {
+    width: 100%;
+    padding: 11px 10px;
+    border-bottom: 1px solid rgba(16,32,59,.08);
+    font-size: 14px;
+  }
+  .site-header .nav.open a:last-child { border-bottom: 0; }
+  .site-header.is-scrolled .nav.open { top: 76px; }
+  .site-header > .header-enroll,
+  .site-header > .pill-btn { display: none; }
+}
+
+/* Tablet layout. */
+@media (min-width: 621px) and (max-width: 1120px) {
+  .image-hero,
+  .page-hero.image-hero { min-height: 520px; padding: 64px 0; }
+  .image-hero h1,
+  .page-hero.image-hero h1 { font-size: clamp(44px, 7vw, 60px); }
+  .hero-copy { text-align: left; }
+  .hero-copy p { margin-inline: 0; }
+  .checks,
+  .hero-actions { justify-content: flex-start; }
+}
+
+/* Phone layout: full-width content, readable hero and touch-friendly menu. */
+@media (max-width: 620px) {
+  body { overflow-x: hidden; }
+  .container { width: 92%; max-width: none; }
+  .site-header { position: sticky; }
+  .site-header .nav.open {
+    left: 3%;
+    right: 3%;
+    max-height: calc(100vh - 98px);
+  }
+  .image-hero,
+  .page-hero.image-hero {
+    min-height: auto;
+    padding: 72px 0;
+    background-position: center center;
+  }
+  .image-hero-content { min-height: 0; }
+  .image-hero .hero-copy,
+  .page-hero .image-hero-content {
+    max-width: 100%;
+    text-align: left;
+  }
+  .image-hero h1,
+  .page-hero.image-hero h1 {
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1.05;
+    max-width: 100%;
+  }
+  .image-hero p { font-size: 16px; line-height: 1.65; }
+  .checks { justify-content: flex-start; gap: 10px 14px; }
+  .hero-actions { align-items: stretch; }
+  .hero-actions a { width: 100%; min-height: 48px; }
+  .home-image-hero,
+  .mission-image-hero,
+  .staff-image-hero,
+  .gallery-image-hero,
+  .news-image-hero { background-position: 58% center; }
+  .hero-overlay {
+    background: linear-gradient(90deg, rgba(7,20,48,.95) 0%, rgba(10,27,58,.85) 65%, rgba(10,27,58,.64) 100%);
+  }
+  .cards,
+  .program-grid,
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid,
+  .staff-profile-grid,
+  .staff-profile-grid-six,
+  .clubs-grid,
+  .values-grid { gap: 20px; }
+}
+
+/* ==============================================================
+   BOOTSTRAP 3 GRID-COMPATIBILITY FIX
+   Bootstrap 3 adds ::before and ::after clearfix elements to every
+   .container. When a container is also CSS Grid, those pseudo-elements
+   become invisible grid items and push cards into the wrong columns.
+   ============================================================== */
+.container::before,
+.container::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Keep the custom site container predictable at all desktop widths. */
+.container {
+  float: none !important;
+  max-width: 1100px !important;
+  width: 86% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Explicitly protect custom CSS-grid sections from Bootstrap defaults. */
+.cards,
+.program-grid,
+.statement-grid,
+.values-grid,
+.mission-grid,
+.pillars-row,
+.stats-grid,
+.gallery-grid,
+.news-grid,
+.testimonials-grid,
+.quick-actions,
+.download-grid,
+.staff-cards,
+.staff-profile-grid,
+.clubs-grid,
+.footer-grid,
+.org-level,
+.two-col,
+.hero-grid {
+  float: none !important;
+  clear: none !important;
+}
+
+.cards > *,
+.program-grid > *,
+.statement-grid > *,
+.values-grid > *,
+.mission-grid > *,
+.pillars-row > *,
+.stats-grid > *,
+.gallery-grid > *,
+.news-grid > *,
+.testimonials-grid > *,
+.quick-actions > *,
+.download-grid > *,
+.staff-cards > *,
+.staff-profile-grid > *,
+.clubs-grid > *,
+.footer-grid > *,
+.org-level > *,
+.two-col > *,
+.hero-grid > * {
+  min-width: 0;
+}
+
+/* Laptop: retain balanced desktop grids without crowding. */
+@media (min-width: 851px) and (max-width: 1366px) {
+  .container {
+    width: 90% !important;
+    max-width: 1100px !important;
+  }
+
+  .program-grid,
+  .mission-grid,
+  .two-col,
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .cards.three,
+  .statement-grid,
+  .pillars-row,
+  .staff-cards,
+  .news-grid,
+  .testimonials-grid,
+  .clubs-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .values-grid,
+  .stats-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Tablet: two-column cards where space permits. */
+@media (min-width: 621px) and (max-width: 850px) {
+  .container {
+    width: 92% !important;
+    max-width: 720px !important;
+  }
+
+  .program-grid,
+  .mission-grid,
+  .statement-grid,
+  .values-grid,
+  .cards.three,
+  .pillars-row,
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid,
+  .staff-cards,
+  .staff-profile-grid,
+  .clubs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .hero-grid,
+  .two-col,
+  .org-level,
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Phone: one clean column and full-width content. */
+@media (max-width: 620px) {
+  .container {
+    width: 92% !important;
+    max-width: none !important;
+  }
+
+  .cards,
+  .program-grid,
+  .statement-grid,
+  .values-grid,
+  .mission-grid,
+  .pillars-row,
+  .stats-grid,
+  .gallery-grid,
+  .news-grid,
+  .testimonials-grid,
+  .quick-actions,
+  .download-grid,
+  .staff-cards,
+  .staff-profile-grid,
+  .clubs-grid,
+  .footer-grid,
+  .org-level,
+  .two-col,
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ==============================================================
+   Navigation readability enhancement
+   Larger menu text on laptops/desktops without crowding the header.
+   ============================================================== */
+@media (min-width: 1400px) {
+  .site-header .nav {
+    gap: 20px;
+  }
+  .site-header .nav a {
+    font-size: 14px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .site-header {
+    padding-inline: 3.5%;
+  }
+  .site-header .nav {
+    gap: 12px;
+  }
+  .site-header .nav a {
+    font-size: 12.5px;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+  .site-header > .header-enroll,
+  .site-header > .pill-btn {
+    padding: 11px 17px;
+    font-size: 12px;
+  }
+}
+
+/* Switch to the mobile/tablet menu before the larger text can overlap. */
+@media (max-width: 1199px) {
+  .site-header .nav {
+    display: none;
+  }
+  .site-header .menu-toggle {
+    display: block;
+  }
+  .site-header .nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+  .site-header .nav.open a {
+    font-size: 15px;
+    line-height: 1.35;
+    padding: 12px 4px;
+  }
+  .site-header > .header-enroll,
+  .site-header > .pill-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header .nav.open a {
+    font-size: 14px;
+  }
+}
+
+/* Programme detail responsiveness */
+@media (max-width: 1199px){
+  .programme-features{column-gap:18px;row-gap:10px;}
+  .programme-features span{font-size:13.5px;}
+}
+@media (max-width: 767px){
+  .programme-features{grid-template-columns:1fr;margin:20px 0 22px;}
+  .programme-levels{gap:8px;}
+  .programme-levels b{min-width:46px;min-height:40px;padding:7px 12px;}
+}
